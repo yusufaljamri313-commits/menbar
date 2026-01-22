@@ -1,11 +1,9 @@
 "use client";
 import Link from 'next/link';
 import { useAuth } from '../context/AuthContext';
-import { useState } from 'react';
 
 export default function Navbar() {
     const { user, logout } = useAuth();
-    const [menuOpen, setMenuOpen] = useState(false);
 
     return (
         <nav className="navbar">
